@@ -106,12 +106,12 @@ const mostrarTodas = () => {
     </div>
 
     <!-- 📍 Listado de tiendas -->
-    <main class="relative z-0 max-w-[90vw] mx-auto pt-[50vh] pb-[6.5rem]">
+    <main class="max-w-[90vw] w-full md:max-w-[60vw] relative z-0 mx-auto pt-[50vh] pb-[6.5rem]">
       <div class="flex justify-between items-center mb-[2.5rem]">
         <h1 class="text-[3rem] font-bold text-[#e22d3a]">Tiendas</h1>
         <button
           @click="mostrarTodas"
-          class="text-[1.8rem] bg-[#e22d3a] hover:opacity-[.5] transition-all duration-300 px-[1.5rem] py-[.5rem] rounded-[1rem] font-semibold text-[1.4rem]"
+          class="text-[1.8rem] bg-[#e22d3a] hover:opacity-[.5] transition-all duration-300 px-[1.5rem] py-[.5rem] rounded-[1rem] font-semibold text-[1.4rem] cursor-pointer"
         >
           Ver todas
         </button>

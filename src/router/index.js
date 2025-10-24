@@ -7,12 +7,12 @@ import Locations from '../views/Locations.vue'
 import Profile from '../views/Profile.vue'
 
 const routes = [
-  { path: '/', name: 'Splash', component: Splash) },
-  { path: '/home', name: 'home', component: Home) },
-  { path: '/artists', name: 'artists', component: Artists) },
-  { path: '/new-comment', name: 'new-comment', component: NewComment) },
-  { path: '/locations', name: 'locations', component: Locations) },
-  { path: '/profile', name: 'profile', component: Profile) }
+  { path: '/', name: 'Splash', component: Splash },
+  { path: '/home', name: 'home', component: Home },
+  { path: '/artists', name: 'artists', component: Artists },
+  { path: '/new-comment', name: 'new-comment', component: NewComment },
+  { path: '/locations', name: 'locations', component: Locations },
+  { path: '/profile', name: 'profile', component: Profile }
 ]
 
 const router = createRouter({
