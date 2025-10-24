@@ -12,7 +12,7 @@
   }
 
   html, body {
-    @apply bg-black text-neutral-900 dark:bg-black dark:text-neutral-100;
+    @apply bg-black;
     font-family: 'Grenze', ui-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   }
 }
