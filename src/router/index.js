@@ -1,12 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Splash from '../views/Splash.vue'
+import Home from '../views/Home.vue'
+import Artists from '../views/Artists.vue'
+import NewComment from '../views/NewComment.vue'
+import Locations from '../views/Locations.vue'
+import Profile from '../views/Profile.vue'
 
 const routes = [
-  { path: '/', name: 'Splash', component: () => import('../views/Splash.vue') },
-  { path: '/home', name: 'home', component: () => import('../views/Home.vue') },
-  { path: '/artists', name: 'artists', component: () => import('../views/Artists.vue') },
-  { path: '/new-comment', name: 'new-comment', component: () => import('../views/NewComment.vue') },
-  { path: '/locations', name: 'locations', component: () => import('../views/Locations.vue') },
-  { path: '/profile', name: 'profile', component: () => import('../views/Profile.vue') },
+  { path: '/', name: 'Splash', component: Splash) },
+  { path: '/home', name: 'home', component: Home) },
+  { path: '/artists', name: 'artists', component: Artists) },
+  { path: '/new-comment', name: 'new-comment', component: NewComment) },
+  { path: '/locations', name: 'locations', component: Locations) },
+  { path: '/profile', name: 'profile', component: Profile) }
 ]
 
 const router = createRouter({
