@@ -1,0 +1,142 @@
+[
+  {
+    "avatar": "./files/avatars/avatar_1.jpg",
+    "usuario": "Kobe45",
+    "comentario": "El solo de guitarra fue brutal, pura energía metalera que me recordó a los clásicos del 82. Es impresionante cómo logran capturar ese sonido vintage sin perder la potencia moderna, un homenaje a los grandes pero con un toque propio. Podría escuchar ese tramo una y otra vez y seguir descubriendo matices entre los acordes y los bends afilados. Una auténtica joya que demuestra que el metal sigue muy vivo y con sangre nueva dispuesta a incendiar los escenarios.",
+    "tiempo": "3 días",
+    "id": "1"
+  },
+  {
+    "avatar": "./files/avatars/avatar_2.jpg",
+    "usuario": "Ludwig14",
+    "comentario": "Los riffs de este tema pesan toneladas, un muro de sonido que te aplasta y te hace sonreír. Cada nota está pensada para golpear fuerte, pero sin dejar de sonar elegante. La producción suena limpia pero con ese toque crudo que mantiene la esencia del metal clásico. Me encanta cómo las guitarras se entrelazan con la batería creando una tormenta sonora imposible de ignorar. Es el tipo de canción que te levanta incluso en los días más grises.",
+    "tiempo": "6 horas",
+    "id": "2"
+  },
+  {
+    "avatar": "./files/avatars/avatar_3.jpg",
+    "usuario": "Amaya68",
+    "comentario": "Nunca había escuchado una batería tan potente, cada golpe parece un trueno cayendo del cielo. El baterista no solo marca el ritmo, sino que cuenta una historia con cada redoble y cada cambio de compás. Es pura pasión transformada en percusión, una lección de fuerza y técnica que deja sin aliento. Si cierro los ojos, puedo imaginarme en la primera fila sintiendo el bombo retumbar en el pecho. No hay duda: este tema está hecho para sonar en directo.",
+    "tiempo": "14 horas",
+    "id": "3"
+  },
+  {
+    "avatar": "./files/avatars/avatar_4.jpg",
+    "usuario": "Jarrod_Tillman83",
+    "comentario": "El nuevo álbum mezcla velocidad, oscuridad y técnica, una joya para cualquier amante del metal. Me sorprendió cómo cada canción tiene su propia identidad, pero todas comparten una misma atmósfera cargada de rabia y emoción. Las guitarras suenan como si estuvieran ardiendo, y la voz atraviesa todo como una espada. Hay momentos en los que parece que el caos se apodera de todo, pero siempre con una precisión quirúrgica que te deja sin palabras.",
+    "tiempo": "1 día",
+    "id": "4"
+  },
+  {
+    "avatar": "./files/avatars/avatar_5.jpg",
+    "usuario": "Scotty_Adams",
+    "comentario": "El cantante tiene una voz que rasga el alma, puro poder metalero sin filtros ni adornos. Su interpretación es una mezcla de furia y emoción, como si cada verso saliera directamente del corazón. En directo debe ser una experiencia brutal, ver cómo transforma cada grito en pura catarsis. Este tipo de energía no se puede fingir, solo se siente. Y se nota que esta banda lo vive en cada acorde, en cada nota, en cada respiración sobre el escenario.",
+    "tiempo": "9 horas",
+    "id": "5"
+  },
+  {
+    "avatar": "./files/avatars/avatar_6.jpg",
+    "usuario": "Hiram6",
+    "comentario": "Las guitarras suenan afiladas como cuchillas, la mezcla perfecta entre furia y elegancia. Cada riff corta el aire con precisión quirúrgica, pero también con alma. Hay una intención detrás de cada nota, una historia contada a través del metal. Me gusta que no buscan ser solo ruidosos: hay estructura, hay emoción, hay identidad. Este tema tiene ese tipo de groove que te atrapa y no te suelta, incluso cuando el último acorde ya se desvaneció.",
+    "tiempo": "4 días",
+    "id": "6"
+  },
+  {
+    "avatar": "./files/avatars/avatar_7.jpg",
+    "usuario": "Everardo95",
+    "comentario": "Escuchar este tema en directo debe ser una experiencia religiosa para cualquier metalhead. Las luces, el humo, los gritos del público, todo encajando con una banda que toca como una máquina bien engrasada. La energía que transmiten es pura, sin artificios, solo metal en estado salvaje. Es de esas canciones que uno recuerda años después, porque te hizo sentir algo real, algo que no se puede explicar con palabras, solo con headbanging.",
+    "tiempo": "18 horas",
+    "id": "7"
+  },
+  {
+    "avatar": "./files/avatars/avatar_8.jpg",
+    "usuario": "Justyn9",
+    "comentario": "La combinación de doble bombo y bajo distorsionado me voló la cabeza, sonido demoledor. Es impresionante cómo consiguen un equilibrio entre brutalidad y claridad. Nada se pierde, todo se siente. Puedes distinguir cada instrumento, pero al mismo tiempo te arrollan como una ola. Pocas bandas logran ese nivel de control sobre el caos, y esta lo hace con una naturalidad pasmosa. Este tema es una declaración de intenciones: metal puro y sin concesiones.",
+    "tiempo": "7 días",
+    "id": "8"
+  },
+  {
+    "avatar": "./files/avatars/avatar_9.jpg",
+    "usuario": "Petra_Shields",
+    "comentario": "La producción es cruda y directa, como debe ser en un disco que huele a cuero y cerveza. No hay sobreproducción ni filtros innecesarios, solo instrumentos reales tocados con pasión. Se siente el roce de las cuerdas, el golpe de los platillos, el aire que vibra. Este tipo de sonido te transporta a un garaje lleno de amplis y sudor, donde el metal nació y donde sigue vivo. Si buscas autenticidad, aquí la tienes en su forma más pura.",
+    "tiempo": "20 horas",
+    "id": "9"
+  },
+  {
+    "avatar": "./files/avatars/avatar_10.jpg",
+    "usuario": "Anabel83",
+    "comentario": "Un grito de rebeldía hecho canción, puro heavy metal sin concesiones ni artificios. Esta banda no intenta complacer a nadie, simplemente hace lo que siente, y eso se nota en cada nota. El resultado es una descarga de energía que te sacude el alma. Si creciste con el sonido de los ochenta, esto es como volver a casa, pero con una producción moderna que realza cada detalle sin perder el alma. Metal con corazón, actitud y verdad.",
+    "tiempo": "5 días",
+    "id": "10"
+  },
+  {
+    "avatar": "./files/avatars/avatar_11.jpg",
+    "usuario": "Lucious_Huel",
+    "comentario": "El solo final es de otra galaxia, técnica impecable con el alma de los grandes del metal. Cada fraseo tiene intención, cada nota se siente. No hay alarde vacío, solo maestría puesta al servicio de la emoción. Es ese tipo de momento que te hace cerrar los ojos y dejarte llevar. Una pieza que demuestra que todavía hay músicos que entienden el metal como arte y no solo como ruido. Puro fuego en seis cuerdas.",
+    "tiempo": "2 horas",
+    "id": "11"
+  },
+  {
+    "avatar": "./files/avatars/avatar_12.jpg",
+    "usuario": "Dorris.Mueller",
+    "comentario": "Este tema suena como un rugido de dragón metálico, fuerza bruta con melodía. Tiene ese equilibrio perfecto entre caos y belleza que define al buen metal. Las guitarras parecen hablar, la batería marca el paso de un ejército y la voz es el grito de guerra. Si este tema no te hace mover la cabeza, nada lo hará. Es un himno moderno que merece ser coreado en estadios llenos de fuego y pasión.",
+    "tiempo": "8 horas",
+    "id": "12"
+  },
+  {
+    "avatar": "./files/avatars/avatar_13.jpg",
+    "usuario": "Ariane.Wiza",
+    "comentario": "La banda demuestra que el heavy metal sigue vivo, potente y con actitud. No se dejan arrastrar por modas ni tendencias, mantienen su esencia con orgullo. Cada tema parece hecho con amor por el género, con respeto y con hambre de escenario. Escuchar este álbum es recordar por qué nos enamoramos del metal en primer lugar: por su honestidad, su energía y su capacidad de hacernos sentir invencibles, aunque sea por unos minutos.",
+    "tiempo": "1 día",
+    "id": "13"
+  },
+  {
+    "avatar": "./files/avatars/avatar_14.jpg",
+    "usuario": "Dayton_Hyatt20",
+    "comentario": "No hay nada como un buen riff para empezar el día, energía pura en cada acorde. Este tema te da ese impulso que necesitas para enfrentar cualquier cosa. Tiene ese tipo de groove que se mete bajo la piel, y cuando crees que ya terminó, vuelve con más fuerza. El metal, cuando se hace bien, no necesita adornos. Solo pasión, instrumentos y actitud. Y esta banda lo tiene todo en cantidades industriales.",
+    "tiempo": "10 días",
+    "id": "14"
+  },
+  {
+    "avatar": "./files/avatars/avatar_15.jpg",
+    "usuario": "Brooke_Cremin40",
+    "comentario": "La mezcla de melodía y brutalidad en este tema es adictiva, imposible no mover la cabeza. Lo mejor es cómo logran mantener la intensidad sin perder la emoción. Hay partes donde parece que todo va a explotar, y justo ahí entra un cambio que te sorprende. Es metal inteligente, con alma y cerebro, no solo ruido. Y eso es lo que lo hace tan especial.",
+    "tiempo": "16 horas",
+    "id": "15"
+  },
+  {
+    "avatar": "./files/avatars/avatar_16.jpg",
+    "usuario": "Lemuel.McKenzie",
+    "comentario": "El bajo tiene una presencia tremenda, marca el ritmo con un groove pesado y sucio. Me encanta cómo lo mezclan tan al frente, sin miedo. Se nota que esta banda sabe que el bajo no está solo para acompañar, sino para liderar. En ciertos momentos parece que todo gira a su alrededor, creando una tensión hipnótica. Es uno de esos detalles que separan a una banda buena de una realmente grande.",
+    "tiempo": "4 horas",
+    "id": "16"
+  },
+  {
+    "avatar": "./files/avatars/avatar_17.jpg",
+    "usuario": "Jaleel.Turner",
+    "comentario": "Este grupo suena mejor con cada disco, auténtico acero forjado a base de pasión y ruido. No se conforman, siempre van un paso más allá. La evolución en su sonido es evidente, pero sin perder su esencia. Escuchar su nuevo trabajo es como reencontrarse con un viejo amigo que ha crecido, pero sigue teniendo la misma chispa en los ojos. Puro heavy metal de verdad, sin disfraces ni poses.",
+    "tiempo": "2 días",
+    "id": "17"
+  },
+  {
+    "avatar": "./files/avatars/avatar_18.jpg",
+    "usuario": "Mylene_Kertzmann",
+    "comentario": "El directo fue una locura, luces rojas, humo y una pared de sonido imposible de olvidar. La conexión con el público era total, como una comunión pagana entre riffs y gritos. Cada canción era una descarga eléctrica que te recorría el cuerpo. Si alguien duda del poder del metal, debería vivir una noche así. No hay religión más sincera que un concierto de este calibre.",
+    "tiempo": "11 horas",
+    "id": "18"
+  },
+  {
+    "avatar": "./files/avatars/avatar_19.jpg",
+    "usuario": "Trinity_Nitzsche",
+    "comentario": "Su estilo mezcla lo mejor del metal clásico con un toque moderno, pura dinamita sonora. Se nota la influencia de los grandes, pero no suena a copia, sino a evolución. Cada detalle está cuidado: la mezcla, la voz, la energía. Es difícil encontrar bandas que mantengan ese balance entre respeto por el pasado y hambre de futuro, y esta lo hace con una facilidad que impresiona.",
+    "tiempo": "21 horas",
+    "id": "19"
+  },
+  {
+    "avatar": "./files/avatars/avatar_20.jpg",
+    "usuario": "Dorthy.Hoppe",
+    "comentario": "No sabía que necesitaba este tema hasta que lo escuché, metal del bueno, sin postureo. Tiene ese tipo de autenticidad que no se fabrica, solo se siente. La letra, la voz, la energía… todo encaja a la perfección. Es una de esas canciones que parecen hechas para acompañarte en los momentos difíciles, para recordarte que todavía hay fuego dentro. Metal honesto, directo al corazón y al cuello.",
+    "tiempo": "5 horas",
+    "id": "20"
+  }
+]
