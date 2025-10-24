@@ -12,6 +12,6 @@ const start = () => setTimeout(() => router.push('/home'), 600)
     <div class="absolute flex flex-col justify-center items-center w-full h-full opacity-0 animation-fade-logo-plus-moveup">
       <img src="/files/logo.png" alt="logo" class="max-w-[30rem] w-[70%]" />
     </div>
-    <button @click="start" class="py-[1rem] px-[3rem] text-[clamp(2.5rem,4vw,3rem)] absolute opacity-0 rounded-[1rem] pointer text-black bg-white animation-moveup-btn cursor-pointer">Entrar</button>
+    <button @click="start" class="py-[1rem] px-[2rem] text-[2.5rem] absolute opacity-0 rounded-[1rem]  text-black bg-white animation-moveup-btn cursor-pointer hover:opacity-[.8] transition-all duration-300">Entrar</button>
   </div>
 </template>

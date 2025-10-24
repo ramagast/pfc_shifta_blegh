@@ -85,7 +85,7 @@ const cerrarSesion = () => {
 
 
         <button
-          class="bg-[#e22d3a] hover:bg-red-700 text-white px-[1.5rem] py-[.5rem] rounded-[1rem] font-semibold text-[2rem]"
+          class="bg-[#e22d3a] hover:opacity-[.8] transition-all duration-300 cursor-pointer text-white px-[1.5rem] py-[.5rem] rounded-[1rem] font-semibold text-[2rem]"
           @click="guardarPerfil"
         >
           Entrar

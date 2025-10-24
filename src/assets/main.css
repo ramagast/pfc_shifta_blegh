@@ -17,12 +17,6 @@
   }
 }
 
-@layer components {
-  .btn-primary {
-    @apply inline-flex items-center gap-2 bg-[--color-accent] text-white px-4 py-2 rounded-lg hover:brightness-110 active:brightness-90;
-  }
-}
-
 @layer utilities {
   @keyframes fadeBg {
     from {
