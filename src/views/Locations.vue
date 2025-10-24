@@ -4,16 +4,16 @@ import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 
 const tiendas = [
-  { nombre: 'Escridiscos', lat: 40.41934832879327, lng: -3.706078750537989 },
-  { nombre: 'Discos Ziggy', lat: 40.41217681943662, lng: -3.706824444989926 },
-  { nombre: 'Discos La Metralleta', lat: 40.415997948817456, lng: -3.704872408171476 },
-  { nombre: 'Discos La Gramola', lat: 40.41915611410263, lng: -3.7058171055939413 },
-  { nombre: 'Y Que Viva Joplin!', lat: 40.42419288879895, lng: -3.712742573824969 },
-  { nombre: 'Nakasha Discos', lat: 40.43273990114739, lng: -3.7136842198521776 },
-  { nombre: 'Marilians Records', lat: 40.42573620307899, lng: -3.7088716654658183 },
-  { nombre: 'Bajo el volcán', lat: 40.410240531564845, lng: -3.699690313002258 },
-  { nombre: 'Molar discos y libros', lat: 40.41079596059725, lng: -3.707633285469285 },
-  { nombre: 'La Integral', lat: 40.4132122973073, lng: -3.6986342351957235 },
+  { nombre: 'Escridiscos', desc: 'Una tienda clásica que abre sus puertas desde 1977 en Madrid. Ofrece una amplia selección de vinilos y CDs de estilos como rock & roll, soul, punk, garage o beat.', lat: 40.41934832879327, lng: -3.706078750537989 },
+  { nombre: 'Discos Ziggy', desc: 'Ubicada en La Latina, es una tienda muy ecléctica de compra/venta de vinilos, CDs, DVDs, cómics… con géneros variados y mucho para rebuscar.', lat: 40.41217681943662, lng: -3.706824444989926 },
+  { nombre: 'Discos La Metralleta', desc: 'Considerada una de las tiendas de vinilos más míticas de Madrid, especializada en compra-venta de vinilos, CDs y DVDs de segunda mano, con décadas de trayectoria.', lat: 40.415997948817456, lng: -3.704872408171476 },
+  { nombre: 'Discos La Gramola', desc: 'Tienda con mucha solera en el centro de Madrid que ofrece vinilos, CDs descatalogados, merchandising y raros, ideal para coleccionistas.', lat: 40.41915611410263, lng: -3.7058171055939413 },
+  { nombre: 'Y Que Viva Joplin!', desc: 'Tienda de música de importación en el centro de Madrid, con un ambiente auténtico y una selección cuidada para amantes del vinilo y ediciones especiales.', lat: 40.42419288879895, lng: -3.712742573824969 },
+  { nombre: 'Nakasha Discos', desc: 'Ubicada en Argüelles, especializada en compra-venta de vinilos (nuevos y de segunda mano) de múltiples estilos, con tienda online también.', lat: 40.43273990114739, lng: -3.7136842198521776 },
+  { nombre: 'Marilians Records', desc: 'Tienda de vinilos y segunda mano en la zona de Conde Duque que combina catálogo físico con firmas, envíos y comunidad de melómanos.', lat: 40.42573620307899, lng: -3.7088716654658183 },
+  { nombre: 'Bajo el volcán', desc: 'En Lavapiés/Embajadores, es una tienda especializada en vinilos nuevos y de segunda mano (rock, soul, funk, jazz, pop) que también mezcla libros.', lat: 40.410240531564845, lng: -3.699690313002258 },
+  { nombre: 'Molar discos y libros', desc: 'Pequeño comercio en La Latina que mezcla librería y tienda de discos. Un espacio cultural independiente donde además de vinilos puedes encontrar libros, cómics, fanzines y realizar actividades.', lat: 40.41079596059725, lng: -3.707633285469285 },
+  { nombre: 'La Integral', desc: 'En el Barrio de las Letras, esta tienda combina vinilos, libros y artículos de diseño independiente. Especializada en reediciones, ediciones actuales y objetos de regalo, con una estética muy cuidada.', lat: 40.4132122973073, lng: -3.6986342351957235 },
 ]
 
 const map = ref(null)
@@ -111,7 +111,8 @@ const mostrarTodas = () => {
           class="bg-black border border-[#e22d3a] hover:opacity-[.5] transition-all duration-300 rounded-[1rem] px-[1.5rem] py-[.5rem] cursor-pointer"
           @click="centrarTienda(tienda, i)"
         >
-          <span class="font-semibold text-[1.8rem]">{{ tienda.nombre }}</span>
+          <p class="font-semibold text-[2rem] mb-[2rem]">{{ tienda.nombre }}</p>
+          <p class="text-[1.8rem]">{{ tienda.desc }}</p>
         </li>
       </ul>
     </main>
