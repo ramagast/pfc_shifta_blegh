@@ -3,7 +3,6 @@ import { onMounted, ref } from 'vue'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 
-// 📍 Tiendas de vinilos de Madrid
 const tiendas = [
   { nombre: 'Escridiscos', lat: 40.41934832879327, lng: -3.706078750537989 },
   { nombre: 'Discos Ziggy', lat: 40.41217681943662, lng: -3.706824444989926 },
@@ -21,7 +20,6 @@ const map = ref(null)
 const markers = ref([])
 const activeMarker = ref(null)
 
-// 🧿 Icono personalizado
 const iconoRojo = L.icon({
   iconUrl: '/files/icons/marker-red.png',
   iconSize: [36, 36],
@@ -29,7 +27,6 @@ const iconoRojo = L.icon({
   popupAnchor: [0, -30],
 })
 
-// 🗺️ Inicializar mapa
 onMounted(() => {
   map.value = L.map('map', {
     center: [40.4168, -3.7038],
@@ -37,24 +34,21 @@ onMounted(() => {
     zoomControl: false,
   })
 
-  // 🎨 Capa base oscura
   L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://carto.com/">CARTO</a>',
   }).addTo(map.value)
 
-  // 📍 Añadir marcadores
   tiendas.forEach((tienda) => {
     const marker = L.marker([tienda.lat, tienda.lng], { icon: iconoRojo })
       .addTo(map.value)
       .bindPopup(`<b>${tienda.nombre}</b>`, {
         closeButton: false,
-        autoPan: false, // 👈 evita que el mapa se mueva al abrir el popup
+        autoPan: false,
         offset: [0, -6],
       })
     markers.value.push(marker)
   })
 
-  // 🔍 Controles de zoom personalizados
   const zoomControl = L.control({ position: 'bottomright' })
   zoomControl.onAdd = () => {
     const div = L.DomUtil.create('div', 'custom-zoom-controls')
@@ -70,27 +64,22 @@ onMounted(() => {
   document.getElementById('zoom-out').onclick = () => map.value.zoomOut()
 })
 
-// 🎯 Centrar tienda seleccionada
 const centrarTienda = (tienda, index) => {
   if (!map.value) return
 
-  // Centrar EXACTAMENTE en el marker
   map.value.setView([tienda.lat, tienda.lng], 17, { animate: true })
 
-  // Cerrar popup anterior
   if (activeMarker.value) {
     activeMarker.value.getPopup()?.close()
     activeMarker.value._icon.classList.remove('bounce-marker')
   }
 
-  // Abrir popup y animar marcador actual (sin autopan)
   const marker = markers.value[index]
   marker.openPopup()
   marker._icon.classList.add('bounce-marker')
   activeMarker.value = marker
 }
 
-// 🌍 Ver todas las tiendas (fitBounds)
 const mostrarTodas = () => {
   if (!map.value) return
   const group = new L.featureGroup(markers.value)
@@ -100,12 +89,10 @@ const mostrarTodas = () => {
 
 <template>
   <div class="relative min-h-screen bg-neutral-950 text-white">
-    <!-- 🗺️ Mapa fijo en el fondo -->
     <div class="fixed top-[2rem] left-0 right-0 z-10 h-[45vh]">
       <div id="map" class="w-full h-full shadow-lg"></div>
     </div>
 
-    <!-- 📍 Listado de tiendas -->
     <main class="max-w-[90vw] w-full md:max-w-[60vw] relative z-0 mx-auto pt-[50vh] pb-[6.5rem]">
       <div class="flex justify-between items-center mb-[2.5rem]">
         <h1 class="text-[3rem] font-bold text-[#e22d3a]">Tiendas</h1>
@@ -136,7 +123,6 @@ const mostrarTodas = () => {
   width: 100%;
 }
 
-/* 🔍 Botones de zoom personalizados */
 .custom-zoom-controls {
   display: flex;
   flex-direction: column;
@@ -162,7 +148,6 @@ const mostrarTodas = () => {
   transform: scale(1.05);
 }
 
-/* 🎸 Animación del marcador */
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
@@ -176,7 +161,6 @@ const mostrarTodas = () => {
   animation: bounce 0.6s ease infinite;
 }
 
-/* 🧭 Popup personalizado */
 :deep(.leaflet-popup-content-wrapper) {
   background: #111;
   color: #fff;

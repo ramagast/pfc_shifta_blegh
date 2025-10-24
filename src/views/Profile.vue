@@ -18,7 +18,6 @@ onMounted(() => {
   }
 })
 
-// 🧠 Guardar perfil (login o actualización)
 const guardarPerfil = () => {
   if (!nombre.value.trim()) {
     alert('Por favor, introduce un nombre.')
@@ -33,14 +32,12 @@ const guardarPerfil = () => {
   localStorage.setItem('perfil', JSON.stringify(perfil))
   isLoggedIn.value = true
 
-  // 👇 Emitimos un evento global para avisar al BottomMenu
   window.dispatchEvent(new CustomEvent('perfil-actualizado', { detail: perfil }))
 
   alert('Perfil guardado correctamente.')
   router.push('/new-comment')
 }
 
-// 🚪 Cerrar sesión
 const cerrarSesion = () => {
   const confirmacion = confirm('¿Seguro que quieres cerrar sesión?')
   if (!confirmacion) return
@@ -50,7 +47,6 @@ const cerrarSesion = () => {
   avatar.value = ''
   isLoggedIn.value = false
 
-  // 👇 Emitimos un evento global para que BottomMenu vuelva al icono por defecto
   window.dispatchEvent(new CustomEvent('perfil-cerrado'))
 
   alert('Sesión cerrada. Puedes iniciar con otro usuario.')
@@ -65,7 +61,6 @@ const cerrarSesion = () => {
     >
       <h1 v-if="!isLoggedIn" class="text-[4rem] font-bold">Hell awaits... you!</h1>
 
-      <!-- ✅ Si NO está logado, mostramos formulario -->
       <div v-if="!isLoggedIn" class="flex flex-col gap-[3rem]">
         <input
           v-model="nombre"
@@ -92,7 +87,6 @@ const cerrarSesion = () => {
         </button>
       </div>
 
-      <!-- ✅ Si SÍ está logado, mostramos datos y botón de cerrar sesión -->
       <div v-else class="flex flex-col items-center gap-[3rem]">
         <img
           :src="avatar || '/files/avatars/avatar_usuario.webp'"

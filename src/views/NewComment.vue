@@ -5,7 +5,7 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 const perfil = ref(null)
 const comentario = ref('')
-const nombre = ref('') // redundante, pero útil si el usuario lo quiere editar
+const nombre = ref('')
 const mostrarToast = ref(false)
 
 onMounted(() => {
@@ -14,7 +14,6 @@ onMounted(() => {
     perfil.value = JSON.parse(stored)
     nombre.value = perfil.value.nombre
   } else {
-    // si no hay sesión, redirigimos al login
     router.push('/profile')
   }
 })
@@ -33,20 +32,17 @@ const enviarComentario = () => {
     usuario: nombre.value.trim(),
     avatar: perfil.value.avatar,
     comentario: comentario.value.trim(),
-    fecha: Date.now(), // 👈 guardamos el timestamp real
+    fecha: Date.now(),
     megusta: 0,
     respuesta: 0,
     liked: false,
     id: Date.now().toString()
   }
 
-
-  // Guardar localmente para simular que se envía
   const existentes = JSON.parse(localStorage.getItem('comentarios') || '[]')
   existentes.unshift(nuevoComentario)
   localStorage.setItem('comentarios', JSON.stringify(existentes))
 
-  // limpiar y redirigir a Home.vue
   comentario.value = ''
   alert('¡Comentario publicado!')
   router.push('/home')
@@ -59,7 +55,6 @@ const enviarComentario = () => {
       <h1 class="text-[2.5rem] font-bold mb-[3rem]">Nuevo comentario</h1>
 
       <form @submit.prevent="enviarComentario" class="flex flex-col gap-[3rem]">
-        <!-- Mostrar usuario logado -->
         <div v-if="perfil" class="flex items-center gap-[1.5rem]">
           <img
             :src="perfil.avatar"
@@ -72,7 +67,7 @@ const enviarComentario = () => {
         <textarea
           v-model="comentario"
           placeholder="Escribe tu comentario..."
-          class="px-[1rem] py-[1rem] border-b border-[#e3e3e3] text-[2rem]
+          class="px-[1rem] py-[1rem] border-b border-[#e3e3e3] text-[#e3e3e3] text-[2rem]
                 focus:border-[#2de398] focus:outline-none transition-colors duration-300"
         ></textarea>
 

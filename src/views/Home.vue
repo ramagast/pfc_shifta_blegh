@@ -15,10 +15,8 @@ onMounted(async () => {
       liked: false
     }))
 
-    // 💬 Añadir los comentarios creados por usuarios
     const nuevos = JSON.parse(localStorage.getItem('comentarios') || '[]')
 
-    // Mostramos primero los nuevos
     usuarios.value = [...nuevos, ...enriched]
   } catch (error) {
     console.error('Error al cargar los usuarios:', error)
@@ -36,13 +34,11 @@ const toggleLike = (user) => {
   }
 }
 
-// Función para calcular tiempo relativo
-// 🕒 Calcular tiempo transcurrido con segundos
 const tiempoTranscurrido = (timestamp) => {
   if (!timestamp) return ''
 
   const ahora = Date.now()
-  const diff = Math.floor((ahora - timestamp) / 1000) // segundos
+  const diff = Math.floor((ahora - timestamp) / 1000)
 
   if (diff < 5) return 'justo ahora'
   if (diff < 60) return `hace ${diff} seg${diff !== 1 ? 's' : ''}`
@@ -58,13 +54,10 @@ const tiempoTranscurrido = (timestamp) => {
   return `hace ${dias} día${dias !== 1 ? 's' : ''}`
 }
 
-
-// Actualizar cada minuto para mantenerlo en tiempo real
 setInterval(() => {
   usuarios.value = [...usuarios.value]
 }, 1000
 )
-
 </script>
 
 <template>

@@ -6,7 +6,7 @@ const start = () => setTimeout(() => router.push('/home'), 600)
 
 <template>
   <div class="w-[100vw] h-[100vh] flex flex-col justify-center items-center bg-black overflow-hidden">
-    <div class="max-w-[30rem] opacity-0 blur-[.2rem] animation-fade-bg">
+    <div class="max-w-[30rem] opacity-0 animation-fade-bg">
       <img src="/files/preload-bg.png" alt="fondo" class="w-full" />
     </div>
     <div class="absolute flex flex-col justify-center items-center w-full h-full opacity-0 animation-fade-logo-plus-moveup">

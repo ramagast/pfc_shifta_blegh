@@ -30,7 +30,7 @@ const metaleros = computed(() => activo.value ? items.filter(i => i.tag === acti
           :key="f"
           @click="setFiltro(f)"
           class="px-[1.8rem] py-[1rem] hover:border-[#2de398] transition-all duration-300 cursor-pointer border rounded-[1rem] text-[1.6rem] capitalize whitespace-nowrap transition-colors"
-          :class="activo === f ? 'bg-[#2de398] text-black border-[#2de398]' : 'border-[#e3e3e3]'"
+          :class="activo === f ? 'bg-[#2de398] text-black border-[#2de398]' : 'border-[#e3e3e3] text-[#e3e3e3]'"
         >{{ f }}</button>
       </div>
 
